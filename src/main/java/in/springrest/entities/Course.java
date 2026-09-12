@@ -1,7 +1,13 @@
 package in.springrest.entities;
 
-public class Course {
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name="course")
+public class Course {
+    @Id
     private long courseId;
     private String courseName;
     private String instructor;
